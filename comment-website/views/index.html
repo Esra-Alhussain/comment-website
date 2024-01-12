@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/styles.css"
+    <title>Comment Website</title>
+</head>
+<body>
+    <h1>Welcome to the Comment Website</h1>
+    <a href="/comments">View Comments</a>
+    <!-- This is a form element. It is used to create an HTML form that 
+    can be submitted. The action attribute specifies the URL where the form data will be sent, and the method attribute specifies the HTTP method to be used -->
+    <form action="/submit" method="post">
+        <!-- for attribute links the label to a specific form element using its id. -->
+        <label for="comment">Leave a Comment:</label>
+        <!-- the name attribute => specifies the name of the input when the form is submitted, 
+                 rows attribute => sets the visible height of the textarea, 
+                 and required attribute=> indicates that this field must be filled out before submitting the form. -->
+        <textarea id="comment" name="comment" rows="4" required></textarea>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
